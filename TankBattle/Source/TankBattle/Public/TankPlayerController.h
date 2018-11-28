@@ -19,6 +19,8 @@ class TANKBATTLE_API ATankPlayerController : public APlayerController
 public:
 	ATank* GetControlledTank() const;
 	
+	bool GetSightRayHitLocation(FVector& HitLoc) const;
+
 	virtual void BeginPlay() override;
 	virtual void Tick(float DeltaTime) override;
 
